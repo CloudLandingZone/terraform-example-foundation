@@ -14,48 +14,48 @@
  * limitations under the License.
  */
 
-org_id = "REPLACE_ME" # format "000000000000"
+org_id = "ORGANIZATION_ID" # format "000000000000"
 
-billing_account = "REPLACE_ME" # format "000000-000000-000000"
+billing_account = "BILLING_ID" # format "000000-000000-000000"
 
-group_org_admins = "REPLACE_ME"
+group_org_admins = "GROUP_ORG_ADMINS"
 
-group_billing_admins = "REPLACE_ME"
+group_billing_admins = "GROUP_BILLING_ADMINS"
 
 # Example of values for the groups
 # group_org_admins = "gcp-organization-admins@example.com"
 # group_billing_admins = "gcp-billing-admins@example.com"
 
-default_region = "us-central1"
+default_region = "northamerica-northeast1"
 
 // Optional - for an organization with existing projects or for development/validation.
 // Uncomment this variable to place all the example foundation resources under
 // the provided folder instead of the root organization.
 // The variable value is the numeric folder ID
 // The folder must already exist.
-//parent_folder = "01234567890"
+parent_folder = "01234567890"
 
 // Optional - for enabling the automatic groups creation, uncoment the groups
 // variable and update the values with the desired group names
-//groups = {
-//  create_groups = true,
-//  billing_project = "billing-project",
-//  required_groups = {
-//    group_org_admins           = "group_org_admins_local_test@example.com"
-//    group_billing_admins       = "group_billing_admins_local_test@example.com"
-//    billing_data_users         = "billing_data_users_local_test@example.com"
-//    audit_data_users           = "audit_data_users_local_test@example.com"
-//    monitoring_workspace_users = "monitoring_workspace_users_local_test@example.com"
-//  },
-//  optional_groups = {
-//    gcp_platform_viewer      = "gcp_platform_viewer_local_test@example.com"
-//    gcp_security_reviewer    = "gcp_security_reviewer_local_test@example.com"
-//    gcp_network_viewer       = "gcp_network_viewer_local_test@example.com"
-//    gcp_scc_admin            = "gcp_scc_admin_local_test@example.com"
-//    gcp_global_secrets_admin = "gcp_global_secrets_admin_local_test@example.com"
-//    gcp_audit_viewer         = "gcp_audit_viewer_local_test@example.com"
-//  }
-//}
+groups = {
+  create_groups = true,
+  billing_project = "billing-project",
+  required_groups = {
+    group_org_admins           = "group_org_admins_local_test@example.com"
+    group_billing_admins       = "group_billing_admins_local_test@example.com"
+    billing_data_users         = "billing_data_users_local_test@example.com"
+    audit_data_users           = "audit_data_users_local_test@example.com"
+    monitoring_workspace_users = "monitoring_workspace_users_local_test@example.com"
+  },
+  optional_groups = {
+    gcp_platform_viewer      = "gcp_platform_viewer_local_test@example.com"
+    gcp_security_reviewer    = "gcp_security_reviewer_local_test@example.com"
+    gcp_network_viewer       = "gcp_network_viewer_local_test@example.com"
+    gcp_scc_admin            = "gcp_scc_admin_local_test@example.com"
+    gcp_global_secrets_admin = "gcp_global_secrets_admin_local_test@example.com"
+    gcp_audit_viewer         = "gcp_audit_viewer_local_test@example.com"
+  }
+}
 //
 
 
