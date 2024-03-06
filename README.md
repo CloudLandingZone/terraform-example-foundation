@@ -1,6 +1,6 @@
 # terraform-example-foundation
 
-adjusted
+20240306 adjusting for https://github.com/terraform-google-modules/terraform-example-foundation/issues/1133
 
 This example repository shows how the CFT Terraform modules can build a secure Google Cloud foundation, following the [Google Cloud security foundations guide](https://cloud.google.com/architecture/security-foundations).
 The supplied structure and code is intended to form a starting point for building your own foundation with pragmatic defaults that you can customize to meet your own requirements. Currently, the step 0 is manually executed.
